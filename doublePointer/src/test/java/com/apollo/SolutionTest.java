@@ -1,8 +1,10 @@
 package com.apollo;
 
 import com.apollo.judgeSquareSum.JudgeSquareSum;
+import com.apollo.merge.Merge;
 import com.apollo.reverseVowels.ReverseVowels;
 import com.apollo.twoSum.TwoSum;
+import com.apollo.validPalindrome.ValidPalindrome;
 import org.junit.Test;
 
 import java.util.Arrays;
@@ -76,4 +78,29 @@ public class SolutionTest {
         System.out.println(result);
     }
 
+    @Test
+    public void testValidPalindrome() {
+        // 输入
+        String s = "aguokepatgbnvfqmgmlcupuufxoohdfpgjdmysgvhmvffcnqxjjxqncffvmhvgsymdjgpfdhooxfuupuculmgmqfvnbgtapekouga";
+        // 输出
+        ValidPalindrome solution = new ValidPalindrome();
+        boolean result = solution.validPalindrome(s);
+        // 检验
+        assertEquals(true, result);
+        System.out.println(result);
+    }
+
+    @Test
+    public void testMerge() {
+        // 输入
+        int[] nums1 = new int[]{1, 2, 3, 0, 0, 0};
+        int[] nums2 = new int[]{2, 5, 6};
+        int m = 3, n = 3;
+        // 输出
+        Merge solution = new Merge();
+        solution.merge(nums1, m, nums2, n);
+        // 检验
+        System.out.println(Arrays.toString(nums1));
+
+    }
 }
