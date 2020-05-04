@@ -1,4 +1,4 @@
-package com.apollo.reverseList;
+package com.apollo;
 
 public class ListNode {
     public int val;
