@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.apollo.linkedListTest" tests="1" skipped="1" failures="0" errors="0" timestamp="2020-05-04T14:00:42" hostname="LAPTOP-M2EA1U5K" time="769.105">
+<testsuite name="com.apollo.linkedListTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-05-04T14:21:02" hostname="LAPTOP-M2EA1U5K" time="0.006">
   <properties/>
-  <testcase name="testSwapPairs" classname="com.apollo.linkedListTest" time="769.105">
-    <skipped/>
-  </testcase>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="testSwapPairs" classname="com.apollo.linkedListTest" time="0.006"/>
+  <system-out><![CDATA[2
+1
+4
+3
+6
+5
+8
+7
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

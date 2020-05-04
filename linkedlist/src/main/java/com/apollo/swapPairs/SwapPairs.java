@@ -25,12 +25,16 @@ public class SwapPairs {
             return head;
         }
         // 1.初始化变量
-        ListNode curNode = head, result = head.next;
+        ListNode curNode = head, preNode=null, result = head.next;
 
         while (curNode != null && curNode.next !=null) {
             ListNode temp = curNode.next;
             curNode.next = temp.next;
             temp.next = curNode;
+            if (preNode != null) {
+                preNode.next = temp;
+            }
+            preNode = curNode;
             curNode = curNode.next;
         }
         return result;
