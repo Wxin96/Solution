@@ -1,11 +1,14 @@
 package com.apollo;
 
+import com.apollo.findLongestWord.FindLongestWord;
 import com.apollo.judgeSquareSum.JudgeSquareSum;
 import com.apollo.reverseVowels.ReverseVowels;
 import com.apollo.twoSum.TwoSum;
 import org.junit.Test;
 
 import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
@@ -99,6 +102,17 @@ public class SolutionTest {
         solution.merge(nums1, m, nums2, n);
         // 检验
         System.out.println(Arrays.toString(nums1));
+    }
 
+    @Test
+    public void testFindLongestWord() {
+        // 输入
+        String s = "abpcplea";
+        List<String> d = new LinkedList<>(Arrays.asList("ale","apple","monkey","plea"));
+        // 输出
+        FindLongestWord solution = new FindLongestWord();
+        String longestWord = solution.findLongestWord(s, d);
+        // 结果
+        System.out.println(longestWord);
     }
 }
