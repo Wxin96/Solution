@@ -1,10 +1,8 @@
 package com.apollo;
 
 import com.apollo.judgeSquareSum.JudgeSquareSum;
-import com.apollo.merge.Merge;
 import com.apollo.reverseVowels.ReverseVowels;
 import com.apollo.twoSum.TwoSum;
-import com.apollo.validPalindrome.ValidPalindrome;
 import org.junit.Test;
 
 import java.util.Arrays;
