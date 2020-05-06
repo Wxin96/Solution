@@ -4,6 +4,7 @@ import com.apollo.ListNode;
 
 public class MergeTwoLists {
     // 一 初始想法
+    // 尾插法
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         // 0.过滤
         if (l1 == null && l2 == null) {

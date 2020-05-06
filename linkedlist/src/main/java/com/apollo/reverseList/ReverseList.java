@@ -17,7 +17,7 @@ public class ReverseList {
         // 当前节点的下一节点的下一节点设置为当前节点
         // 位置绑定，无法通过next索引head但是之前head已存在
         next.next = head;
-        // 当前节点后节点设置为空
+        // 当前节点后节点设置为空, 避免出现环
         head.next = null;
         // 返回新节点
         return newNode;

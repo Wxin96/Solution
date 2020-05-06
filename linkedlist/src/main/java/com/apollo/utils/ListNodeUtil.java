@@ -29,6 +29,10 @@ public class ListNodeUtil {
 
     // 打印列表
     public static void printListNode(ListNode node) {
+        if (node == null) {
+            System.out.println("节点为空!");
+            return;
+        }
         do {
             System.out.println(node.val);
         } while((node = node.next)!=null);

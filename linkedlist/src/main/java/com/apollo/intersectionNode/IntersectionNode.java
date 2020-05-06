@@ -63,7 +63,7 @@ public class IntersectionNode {
         return null;
     }
 
-    //
+    // 双指针 官方精简
     public ListNode getIntersectionNode03(ListNode headA, ListNode headB) {
         // 1.初始化
         ListNode node1 = headA, node2 = headB;
