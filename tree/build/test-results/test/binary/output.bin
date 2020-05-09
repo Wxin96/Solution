@@ -1,0 +1,3 @@
+?2020-05-07 00:40:30,810 DEBUG [com.apollo.utils.TreeUtil] - 3
+e[TreeNode{val=3}, TreeNode{val=9}, TreeNode{val=20}, null, null, TreeNode{val=15}, TreeNode{val=7}]
+3

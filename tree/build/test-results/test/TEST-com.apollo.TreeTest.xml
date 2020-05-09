@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.apollo.TreeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-05-06T16:40:30" hostname="DESKTOP-A10VHUM" time="0.057">
+  <properties/>
+  <testcase name="testMaxDepth" classname="com.apollo.TreeTest" time="0.057"/>
+  <system-out><![CDATA[2020-05-07 00:40:30,810 DEBUG [com.apollo.utils.TreeUtil] - 3
+[TreeNode{val=3}, TreeNode{val=9}, TreeNode{val=20}, null, null, TreeNode{val=15}, TreeNode{val=7}]
+3
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

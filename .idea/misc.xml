@@ -5,6 +5,8 @@
     <file type="web" url="file://$PROJECT_DIR$/../doublePointer" />
     <file type="web" url="file://$PROJECT_DIR$/doublePointer" />
     <file type="web" url="file://$PROJECT_DIR$/linkedlist" />
+    <file type="web" url="file://$PROJECT_DIR$/sort" />
+    <file type="web" url="file://$PROJECT_DIR$/tree" />
   </component>
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
