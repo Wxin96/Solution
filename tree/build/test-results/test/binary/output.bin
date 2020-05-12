@@ -1,3 +1,3 @@
-?2020-05-07 00:40:30,810 DEBUG [com.apollo.utils.TreeUtil] - 3
-e[TreeNode{val=3}, TreeNode{val=9}, TreeNode{val=20}, null, null, TreeNode{val=15}, TreeNode{val=7}]
-3
+?2020-05-11 23:54:09,711 DEBUG [com.apollo.utils.TreeUtil] - 4
+ñ2020-05-11 23:54:09,714 DEBUG [com.apollo.utils.TreeUtil] - [TreeNode{val=5}, TreeNode{val=4}, TreeNode{val=8}, TreeNode{val=11}, null, TreeNode{val=13}, TreeNode{val=4}, TreeNode{val=7}, TreeNode{val=2}, null, null, null, TreeNode{val=1}]
+true

@@ -38,10 +38,13 @@ public class QuickSort {
             arr[l] = arr[r];
             arr[r] = temp;
             // e.避免出现死循环
-            if (arr[l] == pivot) {
-                r--;
-            }
-            if (arr[r] == pivot) {
+            // if (arr[l] == pivot) {
+            //     r--;
+            // }
+            // if (arr[r] == pivot) {
+            //     l++;
+            // }
+            if (arr[l]==pivot && arr[r]==pivot) {
                 l++;
             }
         }

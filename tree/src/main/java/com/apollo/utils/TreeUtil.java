@@ -17,7 +17,7 @@ public class TreeUtil {
         }
         // 1. 分析树
         // 树有几层
-        int piles = (int) (Math.log(nums.length + 1) / Math.log(2));
+        int piles = (int) (Math.log(nums.length + 1) / Math.log(2)) + 1;
         logger.debug(piles);
 
         // 2. 根据层数形成树
@@ -29,13 +29,20 @@ public class TreeUtil {
                 list.add(new TreeNode(num));
             }
         }
-        System.out.println(list);
+        logger.debug(list);
+        // System.out.println(list);
 
         // 3.根据层数遍历形成树
         for (int i = 0; i < piles - 1; i++) {
-            int count = (int)Math.pow(2, i+1) -1;
-            for (int j = (int)Math.pow(2, i) -1; j < (int)Math.pow(2, i+1) -1; j++) {
+            int count = (int) Math.pow(2, i + 1) - 1;
+            for (int j = (int) Math.pow(2, i) - 1; j < (int) Math.pow(2, i + 1) - 1 && count < nums.length; j++) {
+                if (list.get(j) == null) {
+                    continue;
+                }
                 list.get(j).left = list.get(count++);
+                if (count >= nums.length) {
+                    break;
+                }
                 list.get(j).right = list.get(count++);
             }
 

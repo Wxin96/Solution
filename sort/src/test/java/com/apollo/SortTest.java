@@ -60,6 +60,13 @@ public class SortTest {
     }
 
     @Test
+    public void testQuickSort02() {
+        // int[] arr = new int[] {9, 8, 7, 1, 2, 3};
+        QuickSort02 quickSort = new QuickSort02();
+        quickSort.quickSort(arr);
+    }
+
+    @Test
     public void testMergeSort() {
         // int[] arr = new int[] {9, 8, 7, 1, 2, 3};
         MergeSort mergeSort = new MergeSort();
@@ -82,6 +89,14 @@ public class SortTest {
         // System.out.println(Arrays.toString(arr));
     }
 
+    @Test
+    public void testCountingSort() {
+        // 输入
 
+        // 输出
+        CountingSort countingSort = new CountingSort();
+        countingSort.countingSort(arr);
+        // 验证
 
+    }
 }
