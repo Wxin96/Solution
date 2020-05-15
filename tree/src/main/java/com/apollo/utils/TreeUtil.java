@@ -3,7 +3,7 @@ package com.apollo.utils;
 import com.apollo.TreeNode;
 import org.apache.log4j.Logger;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.List;
 
 public class TreeUtil {
@@ -21,7 +21,7 @@ public class TreeUtil {
         logger.debug(piles);
 
         // 2. 根据层数形成树
-        List<TreeNode> list = new LinkedList<>();
+        List<TreeNode> list = new ArrayList<>();
         for (Integer num : nums) {
             if (num == null) {
                 list.add(null);
@@ -37,6 +37,10 @@ public class TreeUtil {
             int count = (int) Math.pow(2, i + 1) - 1;
             for (int j = (int) Math.pow(2, i) - 1; j < (int) Math.pow(2, i + 1) - 1 && count < nums.length; j++) {
                 if (list.get(j) == null) {
+                    // null节点下是否有null子节点
+                    if (list.get(count) == null){
+                        count+=2;
+                    }
                     continue;
                 }
                 list.get(j).left = list.get(count++);

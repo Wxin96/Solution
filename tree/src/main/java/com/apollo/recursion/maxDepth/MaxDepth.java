@@ -1,4 +1,4 @@
-package com.apollo.maxDepth;
+package com.apollo.recursion.maxDepth;
 
 import com.apollo.TreeNode;
 import javafx.util.Pair;

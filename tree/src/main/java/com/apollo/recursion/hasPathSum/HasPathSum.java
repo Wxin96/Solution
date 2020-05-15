@@ -1,4 +1,4 @@
-package com.apollo.hasPathSum;
+package com.apollo.recursion.hasPathSum;
 
 import com.apollo.TreeNode;
 import javafx.util.Pair;

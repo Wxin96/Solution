@@ -1,4 +1,4 @@
-package com.apollo.isBalanced;
+package com.apollo.recursion.isBalanced;
 
 import com.apollo.TreeNode;
 

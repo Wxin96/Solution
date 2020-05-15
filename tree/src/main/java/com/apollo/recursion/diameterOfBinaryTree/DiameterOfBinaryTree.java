@@ -1,4 +1,4 @@
-package com.apollo.diameterOfBinaryTree;
+package com.apollo.recursion.diameterOfBinaryTree;
 
 import com.apollo.TreeNode;
 

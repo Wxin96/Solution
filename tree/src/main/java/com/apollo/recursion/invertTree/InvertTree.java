@@ -1,4 +1,4 @@
-package com.apollo.invertTree;
+package com.apollo.recursion.invertTree;
 
 import com.apollo.TreeNode;
 

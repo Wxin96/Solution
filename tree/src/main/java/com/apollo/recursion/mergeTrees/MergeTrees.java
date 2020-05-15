@@ -1,4 +1,4 @@
-package com.apollo.mergeTrees;
+package com.apollo.recursion.mergeTrees;
 
 import com.apollo.TreeNode;
 import javafx.util.Pair;
