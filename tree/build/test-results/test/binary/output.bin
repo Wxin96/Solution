@@ -1,3 +1,5 @@
-?2020-05-15 15:58:12,738 DEBUG [com.apollo.utils.TreeUtil] - 4
-µ2020-05-15 15:58:12,742 DEBUG [com.apollo.utils.TreeUtil] - [TreeNode{val=1}, TreeNode{val=2}, TreeNode{val=2}, TreeNode{val=3}, TreeNode{val=4}, TreeNode{val=4}, TreeNode{val=3}]
-true
+?2020-05-17 15:01:31,079 DEBUG [com.apollo.utils.TreeUtil] - 4
+¡2020-05-17 15:01:31,082 DEBUG [com.apollo.utils.TreeUtil] - [TreeNode{val=3}, TreeNode{val=9}, TreeNode{val=20}, null, null, TreeNode{val=15}, TreeNode{val=7}]
+3.0
+14.5
+11.0
