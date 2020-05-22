@@ -3,6 +3,8 @@ package com.apollo.partitionLabels;
 import java.util.*;
 
 public class PartitionLabels {
+    // 1. 一点都不贪心的贪心算法
+    // ​体会: 自己根据以前题目, 想出解法, 但要根据具体题目进一步优化.(具体问题, 具体分析, 不能盲目照搬)
     public List<Integer> partitionLabels(String S) {
         // 0.数据结构初始化
         List<Integer> list = new ArrayList<>();
@@ -51,6 +53,11 @@ public class PartitionLabels {
         return list;
     }
 
+    // 1.贪心算法
+    // 问题关键信息: 字母的开始位置(遍历时, 自然会找到), 字母的结束位置(一次遍历形成数组)
+    // 终止条件: 在二次遍历中, 遍历值=end
+    // 时间复杂度: O(n)  n:字符串s长度
+    // 空间复杂度: O(n)  chars数组
     public List<Integer> partitionLabels02(String S) {
         // 0.数据结构初始化
         List<Integer> list = new ArrayList<>();

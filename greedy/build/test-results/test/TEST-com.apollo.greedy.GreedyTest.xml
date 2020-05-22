@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.apollo.greedy.GreedyTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-05-17T16:02:50" hostname="DESKTOP-A10VHUM" time="0.005">
+<testsuite name="com.apollo.greedy.GreedyTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-05-19T13:52:07" hostname="DESKTOP-A10VHUM" time="0.004">
   <properties/>
-  <testcase name="testPartitionLabels" classname="com.apollo.greedy.GreedyTest" time="0.005"/>
-  <system-out><![CDATA[[1, 9]
+  <testcase name="testMaxSubArray" classname="com.apollo.greedy.GreedyTest" time="0.004"/>
+  <system-out><![CDATA[6
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

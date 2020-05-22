@@ -37,11 +37,33 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/search" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../../Soft/gradle-6.3" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/search" />
+          </set>
+        </option>
+        <option name="useQualifiedModuleNames" value="true" />
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/sort" />
         <option name="gradleHome" value="$PROJECT_DIR$/../../Soft/gradle-6.3" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/sort" />
+          </set>
+        </option>
+        <option name="useQualifiedModuleNames" value="true" />
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/stack&amp;queue" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../../Soft/gradle-6.3" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/stack&amp;queue" />
           </set>
         </option>
         <option name="useQualifiedModuleNames" value="true" />

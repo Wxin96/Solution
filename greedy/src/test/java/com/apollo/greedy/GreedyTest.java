@@ -7,6 +7,7 @@ import com.apollo.findContentChildren.FindContentChildren;
 import com.apollo.isSubsequence.IsSubsequence;
 import com.apollo.maxProfit.MaxProfit;
 import com.apollo.maxProfit02.MaxProfit02;
+import com.apollo.maxSubArray.MaxSubArray;
 import com.apollo.partitionLabels.PartitionLabels;
 import com.apollo.reconstructQueue.ReconstructQueue;
 import org.junit.Test;
@@ -107,6 +108,17 @@ public class GreedyTest {
         boolean possibility = solution.checkPossibility(nums);
         // 验证
         System.out.println(possibility);
+    }
+
+    @Test
+    public void testMaxSubArray() {
+        // 输入
+        int[] nums = new int[]{-2, 1, -3, 4, -1, 2, 1, -5, 4};
+        // 输出
+        MaxSubArray solution = new MaxSubArray();
+        int maxSubArray = solution.maxSubArray03(nums);
+        // 验证
+        System.out.println(maxSubArray);
     }
 
     @Test
