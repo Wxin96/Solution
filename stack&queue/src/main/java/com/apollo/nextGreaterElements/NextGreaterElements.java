@@ -11,6 +11,9 @@ public class NextGreaterElements {
     // 空间复杂度: O(n)
     // 思考: 初始想法, 双指针是找后边匹配的数
     // 使用栈结构, 带着数走, 去寻找更大的数, 妙啊
+    // 细节处理:
+    // 1. 采用循环两次策略
+    // 2. 在第二遍遍历时, 不需要在添加元素了, 采用方式 i<len
     public int[] nextGreaterElements(int[] nums) {
         // 0.过滤
         if (nums == null) {

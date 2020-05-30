@@ -55,13 +55,22 @@ public class TreeUtil {
         return list.get(0);
     }
 
-    public static void printTree(TreeNode head) {
+    public static void prePrintTree(TreeNode head) {
         if (head == null) {
             return;
         }
         System.out.println(head);
-        printTree(head.left);
-        printTree(head.right);
+        prePrintTree(head.left);
+        prePrintTree(head.right);
+    }
+
+    public static void inPrintTree(TreeNode head) {
+        if (head == null) {
+            return;
+        }
+        inPrintTree(head.left);
+        System.out.println(head);
+        inPrintTree(head.right);
     }
 
 }

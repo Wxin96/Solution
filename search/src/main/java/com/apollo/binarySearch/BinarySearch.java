@@ -56,4 +56,29 @@ public class BinarySearch {
         return h;
     }
 
+    // 二分查找
+    // 寻找最左边的元素(另一种形式)
+    public int binarySearch04(int[] nums, int key) {
+        // 1.指针初始化(闭区间)
+        int left = 0, right = nums.length - 1;
+        // 2.查找
+        while (left <= right) {
+            // a.中间指针
+            int mid = left + (right - left) / 2;
+            // b.mid值与target的三种不同情况
+            if (nums[mid] == key) {
+                right = mid -1;
+            } else if (nums[mid] < key) {
+                left = mid + 1;
+            } else if (nums[mid] > key) {
+                right = mid -1;
+            }
+        }
+        // 3.left范围[0, nums.length]
+        if (left == nums.length || nums[left] != key) {
+            return -1;
+        }
+        return left;
+    }
+
 }

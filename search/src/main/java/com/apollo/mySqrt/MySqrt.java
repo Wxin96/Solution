@@ -36,6 +36,8 @@ public class MySqrt {
     // 3.改造二分查找
     // 时间复杂度: O(log(x))
     // 空间复杂度: O(1)
+    // 思考:
+    // 二分法的细节要仔细研究, 对应题目的二分, 用实例具体分析
     public int mySqrt03(int x) {
         // 0.特殊
         if (x < 2) {
@@ -56,7 +58,7 @@ public class MySqrt {
                 left = mid + 1;
             }
         }
-        return right;
+        return right;       // 此处right<left
     }
 
     public int mySqrt04(int x) {
@@ -67,19 +69,18 @@ public class MySqrt {
         // 1.指针初始化
         int left = 0, right = x;
         // 2.查找
-        while (left < right-1) {
-            int mid = left + (right - left)/2;
-            int sqrt = x / mid;
-            if (mid == sqrt) {
-                return mid;
+        while (left <= right) {
+            long mid = left + (right - left)/2;
+            if (mid*mid == x) {
+                return (int)mid;
             }
-            if (mid > sqrt) {
-                right = mid - 1;
+            if (mid*mid > x) {
+                right = (int)mid - 1;
             } else {
-                left = mid + 1;
+                left = (int)mid + 1;
             }
         }
-        return left;
+        return right;
     }
 
 }

@@ -3,6 +3,18 @@ package com.apollo.myStack;
 import java.util.LinkedList;
 import java.util.Queue;
 
+/**
+ *  225. 用队列实现栈
+ *  方法一:
+ *      两个队列(压入-O(1), 弹出-O(n))
+ *      此方法, 队列中由n个元素, 弹出n-1个元素到另外队列, 再弹出第n个元素, 再把n-1个元素还原到原先队列
+ *  方法二:
+ *      两个队列(压入-O(n), 弹出-O(1))
+ *      两个队列在压入时, 实现逆序
+ *  方法三:
+ *      一个队列(压入-O(n), 弹出-O(1))
+ *      一个队列在压入时,实现逆序
+ */
 public class MyStack {
 
     Queue<Integer> queue = new LinkedList<>();

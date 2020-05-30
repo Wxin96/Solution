@@ -26,7 +26,7 @@ public class TreeTest {
         Integer[] nums = new Integer[]{3, 9, 20, null, null, 15, 7};
         // 输出
         TreeNode treeNode = TreeUtil.generateTree(nums);
-        TreeUtil.printTree(treeNode);
+        TreeUtil.prePrintTree(treeNode);
     }
 
     @Test
@@ -73,7 +73,7 @@ public class TreeTest {
         InvertTree solution = new InvertTree();
         TreeNode treeNode = solution.invertTree02(root);
         // 验证
-        TreeUtil.printTree(treeNode);
+        TreeUtil.prePrintTree(treeNode);
 
     }
 
@@ -81,17 +81,17 @@ public class TreeTest {
     public void testMergeTrees() {
         // 输入
         TreeNode root1 = TreeUtil.generateTree(new Integer[]{1, 3, 2, 5});
-        TreeUtil.printTree(root1);
+        TreeUtil.prePrintTree(root1);
         System.out.println("------------");
         TreeNode root2 = TreeUtil.generateTree(new Integer[]{2, 1, 3, null, 4, null, 7});
         System.out.println("------------");
-        TreeUtil.printTree(root2);
+        TreeUtil.prePrintTree(root2);
         // 输出
         MergeTrees solution = new MergeTrees();
         TreeNode treeNode = solution.mergeTrees04(root1, root2);
         // 验证
         System.out.println("------------");
-        TreeUtil.printTree(treeNode);
+        TreeUtil.prePrintTree(treeNode);
 
     }
 

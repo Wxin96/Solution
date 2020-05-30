@@ -29,6 +29,6 @@ public class DailyTemperatures {
         return result;
     }
     // 2.暴力匹配(双指针)
-    // 时间复杂度: O(n)
+    // 时间复杂度: O(n^2)
     // 空间复杂度: O(1)
 }
