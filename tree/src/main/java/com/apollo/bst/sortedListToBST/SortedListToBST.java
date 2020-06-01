@@ -9,7 +9,7 @@ import com.apollo.TreeNode;
 public class SortedListToBST {
     // 1.递归
     // 时间复杂度: O(n*log2(n))
-    // 空间复杂度:
+    // 空间复杂度: O(long2(n))
     public TreeNode sortedListToBST(ListNode head) {
         // 1.递归终止
         if (head == null) {
@@ -32,6 +32,8 @@ public class SortedListToBST {
     }
 
     // 链表中, 找mid位置的前一位置
+    // 快慢指针, 查找中间位置时, 要注意快慢指针的起始位置, 快指针的停止
+    // 此处由于链表的单指向性质, 返回中间位置的前一位置
     private ListNode findPreMid(ListNode head) {
         // 0.特殊情况
         if (head == null) {
@@ -54,6 +56,64 @@ public class SortedListToBST {
     }
 
     // 2.递归+转化为数组
+    // 时间复杂度: O(n)
+    // 空间复杂度: O(n)
+    // 相比与前者, 空间复杂度升高, 时间复杂度降低
+    // 此处使用的数组是 ArrayList, 虽然是链表的实现, 内部实质为接口
 
-    // 3.中序遍历模拟
+    // 3.中序遍历模拟（妙）
+    // 时间复杂度: O(n)  n:链表节点数目
+    // 空间复杂度: O(log2(n))
+    private ListNode head;
+    private int lenOfList(ListNode head) {
+        // 0.特殊
+        if (head == null) {
+            return 0;
+        }
+        // 1.初始化变量
+        int len = 0;
+        // 2.迭代
+        while (head != null) {
+            len++;
+            head = head.next;
+        }
+        // 3.返回
+        return len;
+    }
+
+    private TreeNode constructTree(int left, int right) {
+        // 1.递归终止
+        if (left > right) {
+            return null;
+        }
+        // 2.初始化中指针
+        int mid = (left + right) >>> 1;
+        // 3.模拟中序遍历
+        // 左
+        TreeNode leftTreeNode = constructTree(left, mid - 1);
+        // 中
+        TreeNode curTreeNoe = new TreeNode(head.val);
+        curTreeNoe.left = leftTreeNode;
+        head = head.next;   // 下一个
+        // 右
+        curTreeNoe.right = constructTree(mid + 1, right);
+        // 4.递归传递
+        return curTreeNoe;
+    }
+
+    // 初始化
+    public TreeNode sortedListToBST02(ListNode head) {
+        // 0.过滤
+        if (head == null) {
+            return null;
+        }
+        // 1.测长度
+        int size = lenOfList(head);
+        // 2.模拟中序遍历
+        this.head = head;
+        TreeNode root = constructTree(0, size - 1);
+        // 3.返回
+        return root;
+    }
+
 }

@@ -61,14 +61,14 @@ public class KthSmallest {
         return kTarget;
     }
 
-    // 3.递归
+    // 3.递归(分治算法)
     // 思想: 我们的目的是找到第k个最小值, 找到了我们就结束递归
     // 1.对于一颗排序二叉树, 对于根节点第k个最小值, 对于左子树第k个最小元素, 对于右子树第k-1-left个最小值
     // 2.如何判断是当前节点, k-1等于当前节点的左节点数目,
     // 3.当前节点的左子节点数目>k-1, 目标节点在左子树
     // 4.当前节点的左子节点数目<k-1, 目标节点在右子树
-    // 时间复杂度:
-    // 空间复杂度:
+    // 时间复杂度: n*log2(n) n:树的元素树
+    // 空间复杂度: O(h)  h:树的高度
     public int kthSmallest03(TreeNode root, int k) {
         // 0.递归终止
         if (root == null) {
@@ -100,7 +100,9 @@ public class KthSmallest {
         return count(root.left) + count(root.right) + 1;
     }
 
-    // 4.迭代法
+    // 4.迭代法 DFS(栈)
+    // 时间复杂度: O(h+k)  h:树的高度,
+    // 空间复杂度: O(h+k)
     public int kthSmallest04(TreeNode root, int k) {
         // 1.过滤
         if (root == null) {

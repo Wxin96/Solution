@@ -51,7 +51,7 @@ public class FindTarget {
     }
 
     // 2.HashSet方法
-    // 思想: 一边遍历, 一边验证/添加
+    // 思想: 一边遍历, 一边验证/添加, 寻找target-curTreeNode.val
     // 时间复杂度: O(n)
     // 空间复杂度: O(n)
 

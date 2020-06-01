@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.apollo.StringTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-06-01T13:47:16" hostname="DESKTOP-A10VHUM" time="0.006">
+  <properties/>
+  <testcase name="testIsPalindrome" classname="com.apollo.StringTest" time="0.006"/>
+  <system-out><![CDATA[false
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

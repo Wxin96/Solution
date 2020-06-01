@@ -80,7 +80,7 @@ public class BstTest {
         ListNode head = ListUtil.generateList(new Integer[]{-10, -3, 0, 5, 9});
         // 输出
         SortedListToBST solution = new SortedListToBST();
-        TreeNode bst = solution.sortedListToBST(head);
+        TreeNode bst = solution.sortedListToBST02(head);
         // 验证
         TreeUtil.inPrintTree(bst);
     }
@@ -117,4 +117,6 @@ public class BstTest {
         // 验证
         System.out.println(Arrays.toString(mode));
     }
+
+
 }

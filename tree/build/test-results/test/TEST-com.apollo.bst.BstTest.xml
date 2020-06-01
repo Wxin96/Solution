@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.apollo.bst.BstTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-05-30T01:09:35" hostname="DESKTOP-A10VHUM" time="0.059">
+<testsuite name="com.apollo.bst.BstTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-05-31T13:21:56" hostname="DESKTOP-A10VHUM" time="0.055">
   <properties/>
-  <testcase name="testFindMode" classname="com.apollo.bst.BstTest" time="0.059"/>
-  <system-out><![CDATA[2020-05-30 09:09:35,972 DEBUG [com.apollo.utils.TreeUtil] - 3
-2020-05-30 09:09:35,976 DEBUG [com.apollo.utils.TreeUtil] - [TreeNode{val=1}, null, TreeNode{val=2}, TreeNode{val=2}]
-[2]
+  <testcase name="testSortedListToBST" classname="com.apollo.bst.BstTest" time="0.055"/>
+  <system-out><![CDATA[TreeNode{val=-10}
+TreeNode{val=-3}
+TreeNode{val=0}
+TreeNode{val=5}
+TreeNode{val=9}
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

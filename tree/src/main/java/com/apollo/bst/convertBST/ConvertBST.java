@@ -4,11 +4,12 @@ import com.apollo.TreeNode;
 
 /**
  * 538. 把二叉搜索树转换为累加树
+ *      考察实质, 树的反中序遍历
  */
 public class ConvertBST {
     // 1. 右-中-左递归
-    // 时间复杂度: O(n)
-    // 空间复杂度: O(n)
+    // 时间复杂度: O(n)  n:树的元素数
+    // 空间复杂度: O(h)  h:树的高度
     int num = 0;
     public TreeNode convertBST(TreeNode root) {
         // 0.递归终止
@@ -29,6 +30,10 @@ public class ConvertBST {
     }
 
     // 2.DFS迭代
+    // 时间复杂度: O(n)  n:树的元素数
+    // 空间复杂度: O(h)  h:树的高度
 
     // 3.Morris遍历
+    // 时间复杂度: O(n)
+    // 空间复杂度: O(1)
 }

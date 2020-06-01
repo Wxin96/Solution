@@ -4,6 +4,9 @@ import com.apollo.TreeNode;
 
 /**
  * 108. 将有序数组转换为二叉搜索树
+ *  二叉搜索树和有序数由天然的对应的关系, 此处要求构建一颗[平衡]二叉搜索树;
+ *  所谓平衡二叉树, 是指一个二叉树每个节点 的左右两个子树的高度差的绝对值不超过 1。
+ *  进而思考, 每个节点所在二叉树中, 它的值为二叉树的中间值, 故采用平分数组构建二叉树, 直至数组中没有元素;
  */
 public class SortedArrayToBST {
     // 1.递归
@@ -19,7 +22,6 @@ public class SortedArrayToBST {
         // 2.返回
         return bstTree;
     }
-
 
     // 分治算法
     private TreeNode sortedArrayToBST(int[] nums, int start, int end) {

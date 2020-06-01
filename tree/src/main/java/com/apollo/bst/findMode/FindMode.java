@@ -10,7 +10,9 @@ import java.util.Stack;
  *  501.二叉搜索树中的众数
  */
 public class FindMode {
-    // 1.迭代
+    // 1.DFS迭代
+    // 时间复杂度: O(n)  n: 树的节点数目
+    // 空间复杂度: O(n)  n是最差情况, DFS遍历: h:树的高度 List存储众数
     public int[] findMode(TreeNode root) {
         // 0.过滤
         if (root == null) {
