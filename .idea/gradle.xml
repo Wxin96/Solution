@@ -5,6 +5,28 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/array" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../../Soft/gradle-6.3" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/array" />
+          </set>
+        </option>
+        <option name="useQualifiedModuleNames" value="true" />
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/bit" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../../Soft/gradle-6.3" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/bit" />
+          </set>
+        </option>
+        <option name="useQualifiedModuleNames" value="true" />
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/doublePointer" />
         <option name="gradleHome" value="$PROJECT_DIR$/../../Soft/gradle-6.3" />
         <option name="modules">
@@ -42,6 +64,17 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/linkedlist" />
+          </set>
+        </option>
+        <option name="useQualifiedModuleNames" value="true" />
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/math" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../../Soft/gradle-6.3" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/math" />
           </set>
         </option>
         <option name="useQualifiedModuleNames" value="true" />
