@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.apollo.MathTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-06-12T01:19:46" hostname="DESKTOP-A10VHUM" time="2.42">
+  <properties/>
+  <testcase name="testIsPerfectSquare" classname="com.apollo.MathTest" time="2.42"/>
+  <system-out><![CDATA[true
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
