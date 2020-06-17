@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'com.apollo'
+version '1.0-SNAPSHOT'
+
+def lmr = 'file://' + new File('D:/my_java/maven_repository').absolutePath
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    maven { url lmr }
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile('com.apollo:tree:1.0-SNAPSHOT')
+}

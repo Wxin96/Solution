@@ -27,11 +27,33 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/divideAndConquer" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../../Soft/gradle-6.3" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/divideAndConquer" />
+          </set>
+        </option>
+        <option name="useQualifiedModuleNames" value="true" />
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/doublePointer" />
         <option name="gradleHome" value="$PROJECT_DIR$/../../Soft/gradle-6.3" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/doublePointer" />
+          </set>
+        </option>
+        <option name="useQualifiedModuleNames" value="true" />
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/graph" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../../Soft/gradle-6.3" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/graph" />
           </set>
         </option>
         <option name="useQualifiedModuleNames" value="true" />

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.apollo.DivideAndConquerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-06-16T12:02:02" hostname="DESKTOP-A10VHUM" time="0.109">
+  <properties/>
+  <testcase name="testGenerateTrees" classname="com.apollo.DivideAndConquerTest" time="0.109"/>
+  <system-out><![CDATA[TreeNode{val=1}
+TreeNode{val=2}
+TreeNode{val=3}
+----------------
+TreeNode{val=1}
+TreeNode{val=3}
+TreeNode{val=2}
+----------------
+TreeNode{val=2}
+TreeNode{val=1}
+TreeNode{val=3}
+----------------
+TreeNode{val=3}
+TreeNode{val=1}
+TreeNode{val=2}
+----------------
+TreeNode{val=3}
+TreeNode{val=2}
+TreeNode{val=1}
+----------------
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
