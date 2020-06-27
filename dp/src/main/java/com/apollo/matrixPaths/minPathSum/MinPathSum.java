@@ -2,6 +2,13 @@ package com.apollo.matrixPaths.minPathSum;
 
 /**
  *  64. 最小路径和
+ *  状态转移方程:
+ *      dp[i][j] = min{dp[i-1][j], dp[i][j-1]} + grid[i][j]
+ *  BASE CASE
+ *      dp[0][0] = grid[0][0]
+ *      dp[0][j] = dp[0][j-1] + grid[0][j]
+ *      dp[i][0] = dp[i-1][0] + grid[i][0]
+ *  只用到上和左状态, 可以动态压缩, dp[j] 倒叙遍历, 因为后会用到前, 前不会用到后
  */
 public class MinPathSum {
     // 1.暴力解法

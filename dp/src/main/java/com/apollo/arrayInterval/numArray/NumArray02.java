@@ -5,6 +5,16 @@ package com.apollo.arrayInterval.numArray;
  * int param_1 = obj.sumRange(i,j);
  * 更优雅的代码
  *  dp增加一长度
+ *
+ *  状态转移方程:
+ *      dp[i] = dp[i-1] + nums[i-1]
+ *  BASE CASE
+ *      dp[0] = 0
+ *
+ *  (i, j) = dp[j+1] - dp[i]
+ *
+ *  时间复杂度: O(n)
+ *  空间复杂度: O(n)
  */
 public class NumArray02 {
 

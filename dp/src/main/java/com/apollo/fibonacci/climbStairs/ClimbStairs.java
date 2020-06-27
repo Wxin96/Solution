@@ -9,6 +9,7 @@ public class ClimbStairs {
     // 空间复杂度: O(1)
     // 状态转移方程: f(n) = f(n-1) + f(n-2)
     // Base Case: f(1) = 1, f(2) = 2
+    // 当前状态只用到了前两个状态, 可以用[状态压缩], 降低算法的空间复杂度
     public int climbStairs(int n) {
         // 0.过滤
         if (n <= 0) {

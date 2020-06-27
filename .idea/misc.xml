@@ -4,6 +4,7 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/../doublePointer" />
     <file type="web" url="file://$PROJECT_DIR$/array" />
+    <file type="web" url="file://$PROJECT_DIR$/binarySearch" />
     <file type="web" url="file://$PROJECT_DIR$/bit" />
     <file type="web" url="file://$PROJECT_DIR$/divideAndConquer" />
     <file type="web" url="file://$PROJECT_DIR$/doublePointer" />

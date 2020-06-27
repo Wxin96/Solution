@@ -35,8 +35,13 @@ Difficulty: **简单**
 
 Language: **Java**
 
-```java
-​
+```
+1.动态规划
+时间复杂度: O(n)
+空间复杂度: O(1)
+状态转移方程: f(n) = f(n-1) + f(n-2)
+Base Case: f(1) = 1, f(2) = 2
+当前状态只用到了前两个状态, 可以用[状态压缩], 降低算法的空间复杂度
 ```
 ### [198\. 打家劫舍](https://leetcode-cn.com/problems/house-robber/)
 
@@ -75,8 +80,13 @@ Difficulty: **简单**
 
 Language: **Java**
 
-```java
-​
+```
+ 1.动态规划(状态压缩)
+ 时间复杂度: O(n)
+ 空间复杂度: O(1)
+ 状态转移方程(三间房子): A B C, C=max{A+C, B}
+ dp[i] = max{dp[i] + dp[i-1], dp[i-1]}
+ dp[0] = 0, dp[1] = nums[0]
 ```
 ### [213\. 打家劫舍 II](https://leetcode-cn.com/problems/house-robber-ii/description/)
 
@@ -109,8 +119,12 @@ Difficulty: **中等**
 
 Language: **Java**
 
-```java
-​
+```
+1.动态规划
+时间复杂度: O(n)
+空间复杂度: O(1)
+既然位置0和len-1相邻, 两个只能取一个, 求0-(len-2)和1-(len-1)的最大值
+复杂问题 => 子问题 思想
 ```
 4.信件错排问题
 描述: 有N个信和信封, 它们被打乱, 求错误装信方式的数量[所有的元素都不在自己原来的位置].

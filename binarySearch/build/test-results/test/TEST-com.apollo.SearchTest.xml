@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.apollo.SearchTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-06-27T03:38:37" hostname="DESKTOP-A10VHUM" time="0.004">
+  <properties/>
+  <testcase name="testBinarySearch" classname="com.apollo.SearchTest" time="0.004"/>
+  <system-out><![CDATA[1
+21
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -139,7 +139,7 @@ public class DPLearnTest {
         int[][] pairs = {{1, 2}, {2, 3}, {3, 4}};
         // 输出
         FindLongestChain solution = new FindLongestChain();
-        int longestChain = solution.findLongestChain(pairs);
+        int longestChain = solution.findLongestChain03(pairs);
         // 验证
         System.out.println(longestChain);
     }

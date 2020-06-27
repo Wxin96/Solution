@@ -2,6 +2,13 @@ package com.apollo.matrixPaths.uniquePaths;
 
 /**
  * 62.不同路径
+ * 状态转移方程:
+ *     dp[i][j] = dp[i-1][j] + dp[i][j-1]
+ * BASE CASE
+ *     dp[0][0] = 1
+ *     dp[0][j] = dp[0][j-1] = 1
+ *     dp[i][0] = dp[i-1][0] = 1
+ * 只用到上和左状态, 可以动态压缩, dp[j] 倒叙遍历, 因为后会用到前, 前不会用到后
  */
 public class UniquePaths {
     // 1.动态规划

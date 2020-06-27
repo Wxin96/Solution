@@ -8,6 +8,7 @@ public class Rob {
     // 时间复杂度: O(n)
     // 空间复杂度: O(1)
     // 状态转移方程(三间房子): A B C, C=max{A+C, B}
+    // dp[i] = max{dp[i] + dp[i-1], dp[i-1]}
     // dp[0] = 0, dp[1] = nums[0]
     public int rob(int[] nums) {
         // 0.过滤

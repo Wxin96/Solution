@@ -4,6 +4,21 @@ package com.apollo.arrayInterval.numberOfArithmeticSlices;
  *  413. 等差数列划分
  *  解题的关键(剪枝叶):
  *      等差数列[0-(i-1)](增加x个子序列), => 等差数列[0-i] 增加x+1个子序列
+ *  状态转移方程:
+ *      dp[i] = dp[i-1] + 1     A[i] - A[i-1] = A[i-1] - A[i-2]
+ *            = 0   A[i] - A[i-1] != A[i-1] - A[i-2]
+ *  BASE CASE
+ *      dp[0] = 0, dp[1] = 1
+ *
+ *  最后答案 = dp数组的和
+ *
+ *  状态压缩
+ *      可以状态压缩, 当前状态只和上一个状态有关
+ *
+ *  采用方式:
+ *      递归
+ *      动态规划
+ *      状态压缩的动态规划
  */
 public class NumberOfArithmeticSlices {
     // 1.递归方式

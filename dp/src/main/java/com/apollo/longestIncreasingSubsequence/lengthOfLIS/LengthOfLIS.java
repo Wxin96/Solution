@@ -4,6 +4,16 @@ import java.util.Arrays;
 
 /**
  * 300. 最长上升子序列
+ * 时间复杂度: O(n^2)
+ * 空间复杂度: O(n)
+ * 状态转移方程:
+ *      dp[i] = max{1, dp[j] + 1 | nums[i] > nums[j], 0 <= j < i}
+ *  BASE CASE:
+ *      dp[0] = 1
+ *  结果为:
+ *      dp[n]中最大值
+ *
+ * 其他解法: 二分法(暂时了解)
  */
 public class LengthOfLIS {
     // 1.动态规划
